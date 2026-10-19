@@ -74,7 +74,7 @@ export const SecurityPasskeyRow = ({
   useRegisterFluidHoverItem(registerItem, index, rowRef);
 
   return (
-    <Item className="relative z-10" ref={rowRef} render={<li />} size="sm">
+    <Item className="relative z-10 py-0" ref={rowRef} render={<li />} size="sm">
       <ItemContent className="min-w-0">
         <ItemTitle className="flex flex-wrap items-center gap-2">
           {displayName}
