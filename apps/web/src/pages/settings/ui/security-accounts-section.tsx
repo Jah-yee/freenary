@@ -71,7 +71,7 @@ const AccountRow = ({ children, index, registerItem }: AccountRowProps) => {
   useRegisterFluidHoverItem(registerItem, index, rowRef);
 
   return (
-    <Item className="relative z-10 py-0" ref={rowRef} render={<li />} size="sm">
+    <Item className="relative z-10" ref={rowRef} render={<li />} size="sm">
       {children}
     </Item>
   );
@@ -231,7 +231,7 @@ export const SecurityAccountsSection = ({
         )}
 
         {(passwordAccount !== undefined || rows.length > 0) && (
-          <SettingsRowList hover={hover} ref={listRef}>
+          <SettingsRowList className="px-2" hover={hover} ref={listRef}>
             {passwordAccount === undefined ? null : (
               <AccountRow index={0} registerItem={hover.registerItem}>
                 <ItemContent className="min-w-0">
